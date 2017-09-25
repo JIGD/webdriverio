@@ -1,0 +1,26 @@
+{
+  "name": "webdriverio-test",
+  "version": "1.0.0",
+  "description": "Project to start learning about webdriver.io",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pending"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "JIGD",
+  "devDependencies": {
+    "geckodriver": "1.8.1",
+    "selenium-server": "^3.0.1",
+    "wdio-jasmine-framework": "^0.3.2",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "webdriverio": "4.8.0",
+    "wdio-spec-reporter": "~0.0.1"
+  }
+}
