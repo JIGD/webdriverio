@@ -4,17 +4,17 @@ module.exports = (function () {
     return {
         get: function () {
             var self = this;
-            browser.url('/');
+            browser.url('/contribute.html');
             return self.page();
         },
 
         page: function () {
+            browser.waitForVisible('#Contributing', 30000);
             var shared = sharedPageObjects();
-            browser.waitForVisible('.testimonials', 30000);
             var page = browser.element('.content .container');
             return {
                 header: shared.header,
-                testimonials: page.element('.testimonials')
+                doc: page.element('#Contributing')
         }
         }
     };

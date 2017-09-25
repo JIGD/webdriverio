@@ -4,17 +4,17 @@ module.exports = (function () {
     return {
         get: function () {
             var self = this;
-            browser.url('/');
+            browser.url('/api.html');
             return self.page();
         },
 
         page: function () {
+            browser.waitForVisible('#WebdriverIO-API-Docs', 30000);
             var shared = sharedPageObjects();
-            browser.waitForVisible('.testimonials', 30000);
             var page = browser.element('.content .container');
             return {
                 header: shared.header,
-                testimonials: page.element('.testimonials')
+                apidoc: page.element('#WebdriverIO-API-Docs')
         }
         }
     };
