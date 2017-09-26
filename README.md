@@ -13,3 +13,4 @@
 * Had an issue with selenium where it would fail on install.
 * Had an issue with how webdriver.io manages elements and promises since it's really different to how it's done on protractor.
 * Had an issue with cucumber finds step definitions (Had to switch to jasmine).
+* Had an issue with async not working due to a property in config file.
