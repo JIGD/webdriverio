@@ -121,9 +121,13 @@ exports.config = {
     // reporters: ['dot'],
     //
     // Options to be passed to Jasmine.
-    reporters: ['spec'],
+    reporters: ['spec', 'junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './test/reports'
+        }
+    },
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 10000,
         expectationResultHandler: function(passed, assertion) {
             /**
              * only take screenshot if assertion failed
