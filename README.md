@@ -23,3 +23,4 @@
 * Add grunt for more runs instead of just using package.
 * Add propper testing for search bar.
 * Add allure reporting for instant html reports using a grunt or node command.
+* Add more complex before and after hooks.
