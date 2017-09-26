@@ -5,6 +5,8 @@ function Header(header) {
     header.guide = $('a*=Developer Guide');
     header.api = $('a*=API');
     header.contribute = $('a*=Contribute');
+    header.docSearch = $('input.ds-input');
+    header.suggestion = $('.algolia-docsearch-suggestion--category-header');
     return header;
 }
 

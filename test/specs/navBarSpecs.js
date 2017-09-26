@@ -8,7 +8,7 @@ var ContributePage = require('../page_objects/ContributePage');
 var expect = require('chai').use(require('chai-as-promised')).expect;
 
 
-describe('Webdriver.io tests', () => {
+describe('Nav bar navigation tests', () => {
 
     //expects are not really needed since we're checking for load in page() methods but added for clarity.
     it('navigation links redirect us to the right pages', () => {
