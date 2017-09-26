@@ -3,11 +3,8 @@
  */
 var IndexPage = require('../page_objects/IndexPage');
 var GuidePage = require('../page_objects/GuidePage');
-var ApiPage = require('../page_objects/ApiPage');
-var ContributePage = require('../page_objects/ContributePage');
+var expect = require('chai').use(require('chai-as-promised')).expect;
 
-beforeEach(function () {
-});
 
 describe('Webdriver.io tests', () => {
 
@@ -15,6 +12,7 @@ describe('Webdriver.io tests', () => {
         let indexPage =  IndexPage.get();
         indexPage.header.guide.click();
         let guidePage =  GuidePage.page();
-        expect(guidePage.folderNavigation.getStarted.isVisible()).toBe(true);
+
+        expect(guidePage.folderNavigation.getStarted.isVisible()).to.eventually.equal(true);
     });
 });
